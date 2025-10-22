@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Hoeckler Estética Avançada - Beleza e Bem-estar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-content">
+                        <div class="logo-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Ana Hoeckler</span>
+                            <span class="logo-subtitle">Estética Avançada</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Home</a></li>                   
+                    <li><a href="#sobre" class="nav-link">Quem somos</a></li>
+                    <li><a href="#Produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#tratamentos" class="nav-link">Tratamentos em Destaque</a></li>
+                    <li><a href="#contato-final" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Carrossel de Imagens de Fundo -->
+        <div class="hero-carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide active">
+                    <img src="{{ url_for('static', filename='imagem/FotoFundo2.jpg') }}" alt="Background 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="{{ url_for('static', filename='imagem/FundoInicio (1).png') }}" alt="Background 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="{{ url_for('static', filename='imagem/FotoFundo3.jpg') }}" alt="Background 3">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Setas de Navegação -->
+        <div class="carousel-nav">
+            <button class="carousel-arrow carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-arrow carousel-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <!-- Pontos de Paginação -->
+        <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Left Side - Text Content -->
+                <div class="hero-text">
+                    <h1 class="hero-title">Ame sua vida.</h1>
+                    
+                    <p class="hero-description">
+                        Somos uma clínica estética completa e avançada. Realizamos tratamentos faciais, corporais e procedimentos médicos com uma equipe especializada, métodos avançados e tecnologia de ponta.
+                    </p>
+                    
+                     <div class="hero-buttons">
+                         <a href="#servicos" class="btn btn-primary">
+                             <span>Saiba mais</span>
+                         </a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        
+        <!-- Links das Redes Sociais -->
+        <div class="hero-social-links">
+            <a href="https://www.instagram.com/reels/C0NbWlpN8qi/" target="_blank" class="social-link">Instagram</a>
+        </div>
+        
+        <!-- WhatsApp Flutuante -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/554991873943" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="Produtos" class="products">
+        <div class="container">
+            <!-- Products Header -->
+            <div class="products-header">
+                <div class="products-badge">
+                    <i class="fas fa-gem"></i>
+                    <span>Coleção Premium</span>
+                </div>
+                <h2 class="products-title">Produtos que <span class="highlight-text">Revelam</span> sua Beleza Natural</h2>
+                <p class="products-subtitle">Cada produto foi cuidadosamente selecionado para oferecer os melhores resultados em sua jornada de autocuidado</p>
+            </div>
+
+            <!-- Products Showcase -->
+            <div class="products-showcase">
+                <!-- Featured Product -->
+                <div class="featured-product">
+                    <div class="featured-content">
+                        <div class="featured-badge">
+                            <i class="fas fa-crown"></i>
+                            <span>Produto em Destaque</span>
+                        </div>
+                        <h3 class="featured-title">Anna Pegova Protetor Solar</h3>
+                        <p class="featured-description">Proteção solar avançada com tecnologia Anna Pegova. Formulado com ingredientes premium para proteger sua pele dos raios UV enquanto mantém a hidratação natural. Ideal para uso diário com textura leve e não oleosa.</p>
+                        <div class="featured-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Proteção UV Completa</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Textura Leve</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hidratação Natural</span>
+                            </div>
+                        </div>
+                        <div class="featured-price">
+                            <span class="current-price">R$ 138,00</span>
+                            <span class="original-price">R$ 160,00</span>
+                            <span class="discount">-14%</span>
+                        </div>
+                        <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Protetor%20Solar.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="featured-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Comprar Agora</span>
+                        </a>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image-wrapper">
+                            <img src="{{ url_for('static', filename='imagem/Anna Pegova Protetor Solar.jpg') }}" alt="Anna Pegova Protetor Solar">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    
+                    <!-- Anna Pegova Products -->
+                    <!-- Product 1 - Anna Pegova Protetor Solar (DESTAQUE) -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Anna Pegova Protetor Solar.jpg') }}" alt="Anna Pegova Protetor Solar">
+                            <div class="product-badge">DESTAQUE</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Proteção Solar</div>
+                            <h4 class="product-name">Anna Pegova Protetor Solar</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>Produto em Destaque
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 138,00</span>
+                            </div>
+
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Protetor%20Solar.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 - Anna Pegova Telo -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Anna Pegova Telo.jpg') }}" alt="Anna Pegova Telo">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Cuidados</div>
+                            <h4 class="product-name">Anna Pegova Telo</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 368,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Telo.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 - Anna Pegova Hidratante MI -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Anna Pegova Hidratante MI.jpg') }}" alt="Anna Pegova Hidratante MI">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Hidratação</div>
+                            <h4 class="product-name">Anna Pegova Hidratante MI</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 298,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Hidratante%20MI.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product 5 - Anna Pegova Gel Contour -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Anna Pegova Gel Contour.jpg') }}" alt="Anna Pegova Gel Contour">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Contorno</div>
+                            <h4 class="product-name">Anna Pegova Gel Contour</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 298,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Gel%20Contour.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product 6 - Anna Pegova Hidratante E -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Pegotan 61.jpg') }}" alt="Anna Pegova Hidratante Pegotan 61">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Hidratação</div>
+                            <h4 class="product-name">Anna Pegova Hidratante Pegotan 61</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 265,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Hidratante%20E.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 - Anna Pegova V Shape -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Shape.jpg') }}" alt="Anna Pegova V Shape">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Modelagem</div>
+                            <h4 class="product-name">Anna Pegova V Shape</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 338,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20V%20Shape.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 - Anna Pegova Preenchedor D -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Hyalu.jpg') }}" alt="Anna Pegova Preenchedor D">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Preenchimento</div>
+                            <h4 class="product-name">Anna Pegova Preenchedor D</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 298,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Preenchedor%20D.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 - Anna Pegova Hyaluronic + C  -->
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="{{ url_for('static', filename='imagem/Hyaluronic + C.jpg') }}" alt="Anna Pegova Hyaluronic + Retinol">
+                            <div class="product-badge">Anna Pegova</div>
+                            <div class="product-overlay">
+                                <button class="wishlist-btn">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Hidratação</div>
+                            <h4 class="product-name">Anna Pegova Hyaluronic + C</h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"></span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">R$ 188,00</span>
+                            </div>
+                            <a href="https://wa.me/554991873943?text=Olá!%20Me%20interessei%20pelo%20produto%20Anna%20Pegova%20Hyaluronic%20+%20C.%20Gostaria%20de%20saber%20mais%20sobre%20ele%20e%20como%20adquirir." target="_blank" class="product-buy-btn">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Comprar Agora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products CTA -->
+            <div class="products-cta">
+                <div class="cta-content">
+                    <h3>Descubra Mais Produtos</h3>
+                    <p>Explore nossa coleção completa de produtos premium para todos os tipos de pele</p>
+                    <button class="cta-btn" id="showMoreProducts">
+                        <span id="btnText">Ver Todos os Produtos</span>
+                        <i class="fas fa-arrow-right" id="btnIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="services-title">Tratamentos Populares</h2>
+                <p class="services-subtitle">Descubra nossos procedimentos mais procurados para realçar sua beleza natural</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço1Peeling.jpg') }}" alt="Limpeza de Pele Profunda">
+                        <div class="service-overlay">
+                            <div class="service-category">Peeling</div>
+                            <h3 class="service-name">Rosto/Pescoço</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Peeling%20Rosto/Pescoço." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço2Botox.jpg') }}" alt="Tratamento Anti-idade">
+                        <div class="service-overlay">
+                            <div class="service-category">Botox</div>
+                            <h3 class="service-name">Rosto</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Anti-idade." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço3Bio.jpg') }}" alt="Hidratação Facial">
+                        <div class="service-overlay">
+                            <div class="service-category">Bioestimulador de Colágeno</div>
+                            <h3 class="service-name">Facial/Corporal</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Hidratação%20Facial%20Premium." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço4Bumbum.jpg') }}" alt="Peeling Químico">
+                        <div class="service-overlay">
+                            <div class="service-category">Bumbum Power</div>
+                            <h3 class="service-name">Corporal</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Peeling%20Químico." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço5Depilação.png') }}" alt="Drenagem Linfática">
+                        <div class="service-overlay">
+                            <div class="service-category">Depilação a Laser</div>
+                            <h3 class="service-name">Corporal</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Drenagem%20Linfática." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{{ url_for('static', filename='imagem/Serviço6Enzimas.png') }}" alt="Microagulhamento">
+                        <div class="service-overlay">
+                            <div class="service-category">Enzimas</div>
+                            <h3 class="service-name">Corporal</h3>
+                            <a class="service-btn" href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20de%20Microagulhamento." target="_blank" rel="noopener noreferrer">VER DETALHES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Ver Mais Serviços -->
+            <div class="services-cta">
+                <button class="services-more-btn" id="showMoreServices">
+                    <span>Ver Todos os Serviços</span>
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Featured Treatments Section -->
+    <section class="featured-treatments" id="tratamentos">
+        <div class="container">
+            <div class="treatments-header">
+                <span class="treatments-badge">
+                    <i class="fas fa-star"></i>
+                    Tratamentos em Destaque
+                </span>
+                <h2 class="treatments-title">Transforme sua Beleza com <span class="highlight">Excelência</span></h2>
+            </div>
+
+            <div class="treatments-grid">
+                <!-- Treatment Card 1 -->
+                <div class="treatment-card card-1">
+                    <div class="card-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Harmonização Facial</h3>
+                    <p>Procedimentos personalizados para realçar sua beleza natural com resultados suaves e naturais.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Treatment Card 2 -->
+                <div class="treatment-card card-2">
+                    <div class="card-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Rejuvenescimento</h3>
+                    <p>Técnicas avançadas para reverter os sinais do tempo e recuperar a juventude da sua pele.</p>
+                    <div class="card-glow"></div>
+                </div>
+
+                <!-- Treatment Card 3 -->
+                <div class="treatment-card card-3">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Bem-estar Corporal</h3>
+                    <p>Tratamentos completos para o corpo que promovem saúde, beleza e sensação de bem-estar.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <!-- Hero About -->
+            <div class="about-hero">
+                <div class="about-hero-content">
+                    <div class="about-hero-text">
+                        <span class="about-badge"><i class="fas fa-star"></i> Sobre Nós</span>
+                        <h2 class="about-hero-title">Descubra Sua <span class="highlight-text">Beleza Autêntica</span> com Excelência Médica</h2>
+                        <p class="about-hero-description">Na clínica da Dra. Ana Hoeckler, unimos tecnologia de ponta, expertise médica e um toque artístico único para revelar a essência da sua beleza natural. Cada procedimento é cuidadosamente planejado para resultados que realçam sua individualidade, criando uma experiência transformadora que vai além da estética.</p>
+                    </div>
+                    <div class="about-hero-image">
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='imagem/FotoAnaSobre.png') }}" alt="Dra. Ana Hoeckler" class="hero-doctor-img">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Vidas Transformadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Anos de Dedicação</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Técnicas Avançadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% de Excelência</div>
+                </div>
+            </div>
+
+            
+
+            <!-- Values Section -->
+            <div class="about-values">
+                <div class="values-header">
+                    <h3>Nossos Valores</h3>
+                    <p>Os pilares que guiam nosso trabalho diário</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Segurança Absoluta</h4>
+                        <p>Protocolos rigorosos e equipamentos certificados garantem a máxima segurança em todos os procedimentos.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Cuidado Personalizado</h4>
+                        <p>Cada tratamento é único, desenvolvido especialmente para suas necessidades e objetivos pessoais.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Excelência Técnica</h4>
+                        <p>Utilizamos apenas tecnologias de ponta e produtos de alta qualidade para resultados excepcionais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="about-timeline">
+                <div class="timeline-header">
+                    <h3>Nossa Trajetória de Sucesso</h3>
+                    <p>Marcos importantes na nossa missão de transformar vidas através da beleza</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <h4>O Primeiro Passo</h4>
+                            <p>Formação em Medicina pela USP e início da especialização em Medicina Estética, consolidando a base científica para nossa missão.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-content">
+                            <h4>Nascimento da Clínica</h4>
+                            <p>Inauguração da primeira unidade com foco em tratamentos personalizados, tecnologia de ponta e atendimento humanizado.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h4>Expansão e Inovação</h4>
+                            <p>Certificação internacional e introdução de técnicas revolucionárias, estabelecendo novos padrões de excelência no mercado.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h4>Liderança Consolidada</h4>
+                            <p>Reconhecida como referência absoluta em medicina estética, com mais de 500 vidas transformadas e 98% de satisfação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram">
+        <div class="instagram-header">
+            <h2 class="instagram-title">INSTAGRAM @ANAESTETICA</h2>
+        </div>
+        
+        <div class="instagram-gallery">
+            <!-- Instagram Post 1 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/FotoAnaSobre.png') }}" alt="Tratamento Estético">
+            </div>
+
+            <!-- Instagram Post 2 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/FotoProduto.png') }}" alt="Procedimento Facial">
+            </div>
+
+            <!-- Instagram Post 3 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/1.png') }}" alt="Tratamento Corporal">
+            </div>
+
+            <!-- Instagram Post 4 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/2.png') }}" alt="Resultado Estético">
+            </div>
+
+            <!-- Instagram Post 5 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/FotoProduto.png') }}" alt="Tratamento Avançado">
+            </div>
+
+            <!-- Instagram Post 6 -->
+            <div class="instagram-post">
+                <img src="{{ url_for('static', filename='imagem/4.png') }}" alt="Bem-estar e Relaxamento">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato-final">
+        <!-- WhatsApp CTA Section -->
+        <div class="footer-whatsapp-cta">
+            <div class="container">
+                <div class="whatsapp-cta-content">
+                    <div class="whatsapp-cta-text">
+                        <h3>Pronta para Transformar sua Beleza?</h3>
+                        <p>Entre em contato conosco e agende sua consulta personalizada</p>
+                    </div>
+                    <a href="https://wa.me/554991873943?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20e%20saber%20mais%20sobre%20os%20tratamentos." target="_blank" class="whatsapp-cta-btn">
+                        <div class="btn-content">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="btn-text">
+                                <span class="btn-title">Fale Conosco</span>
+                                <span class="btn-subtitle">Via WhatsApp</span>
+                            </div>
+                        </div>
+                        <div class="btn-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-section footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-text">Ana Hoeckler Estética</div>
+                            <div class="logo-subtitle">Medicina Estética Avançada</div>
+                        </div>
+                        <p class="footer-description">Transformando vidas através da beleza e bem-estar. Sua jornada para o melhor de você começa aqui, com excelência médica e resultados naturais.</p>
+                        
+                        <!-- Certifications -->
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>CRM Ativo</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-award"></i>
+                                <span>Certificação Internacional</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Protocolos Seguros</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/reels/C0NbWlpN8qi/" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://wa.me/554991873943" target="_blank" class="social-link" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Navegação</h4>
+                        <ul class="footer-links">
+                            <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                            <li><a href="#sobre"><i class="fas fa-user-md"></i> Sobre a Dra. Ana</a></li>
+                            <li><a href="#produtos"><i class="fas fa-gem"></i> Produtos Premium</a></li>
+                            <li><a href="#servicos"><i class="fas fa-spa"></i> Tratamentos</a></li>
+                            <li><a href="#contato"><i class="fas fa-phone"></i> Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Tratamentos</h4>
+                        <ul class="footer-links">
+                            <li><a href="#servicos"><i class="fas fa-leaf"></i> Limpeza de Pele</a></li>
+                            <li><a href="#servicos"><i class="fas fa-clock"></i> Anti-envelhecimento</a></li>
+                            <li><a href="#servicos"><i class="fas fa-tint"></i> Hidratação Facial</a></li>
+                            <li><a href="#servicos"><i class="fas fa-magic"></i> Peeling Químico</a></li>
+                            <li><a href="#servicos"><i class="fas fa-hand-holding-heart"></i> Drenagem Linfática</a></li>
+                            <li><a href="#servicos"><i class="fas fa-microscope"></i> Microagulhamento</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Entre em Contato</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Telefone</span>
+                                    <span class="contact-value">+55 49 9187-3943</span>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Endereço</span>
+                                    <span class="contact-value">R. Nereu Ramos, 403 - CENTRO, Fraiburgo - SC, 89580-000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions -->
+                        <div class="footer-actions">
+                            <a href="#contato" class="action-btn primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Agendar Consulta</span>
+                            </a>                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Ana Hoeckler Estética Avançada. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="footer-links-bottom">
+                        <a href="#privacy">Política de Privacidade</a>
+                        <a href="#terms">Termos de Uso</a>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Painel Lateral de Serviços -->
+    <div class="services-sidebar" id="servicesSidebar">
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <div class="sidebar-content">
+            <div class="decorative-element-1"></div>
+            <div class="decorative-element-2"></div>
+            <div class="sidebar-header">
+                <h2>Nossos Serviços</h2>
+                <button class="sidebar-close" id="sidebarClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-body">
+                <div class="search-container">
+                    <input type="text" id="serviceSearch" placeholder="Buscar serviço...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="services-list-compact" id="servicesList">
+                    <!-- Tratamentos Faciais -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-face-smile"></i> Tratamentos Faciais</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="PEELING FACIAL" onclick="openWhatsApp('PEELING FACIAL')">PEELING FACIAL</div>
+                            <div class="service-item-compact" data-service="PEELING REJUVENESCEDOR">PEELING REJUVENESCEDOR</div>
+                            <div class="service-item-compact" data-service="PEELING REGIÃO OLHOS">PEELING REGIÃO OLHOS</div>
+                            <div class="service-item-compact" data-service="BOTOX (50 UND)">BOTOX (50 UND)</div>
+                            <div class="service-item-compact" data-service="BIOESTIMULADOR DE COLAGENFACIAL">BIOESTIMULADOR DE COLAGENFACIAL</div>
+                            <div class="service-item-compact" data-service="AVALIAÇÃO FACIAL">AVALIAÇÃO FACIAL</div>
+                            <div class="service-item-compact" data-service="PREENCHIMENTO (LABIAL)">PREENCHIMENTO (LABIAL)</div>
+                            <div class="service-item-compact" data-service="RINOMODELAÇÃO">RINOMODELAÇÃO</div>
+                            <div class="service-item-compact" data-service="PREENCHIMENTO (OLHEIRA)">PREENCHIMENTO (OLHEIRA)</div>
+                            <div class="service-item-compact" data-service="RETORNO BOTOX">RETORNO BOTOX</div>
+                            <div class="service-item-compact" data-service="JATO DE PLASMA">JATO DE PLASMA</div>
+                            <div class="service-item-compact" data-service="RETORNO JATO DE PLASMA">RETORNO JATO DE PLASMA</div>
+                            <div class="service-item-compact" data-service="RETORNO PEELING">RETORNO PEELING</div>
+                            <div class="service-item-compact" data-service="RETORNO BIOESTIMULADOR">RETORNO BIOESTIMULADOR</div>
+                            <div class="service-item-compact" data-service="RETORNO PREENCHIMENTO LAB">RETORNO PREENCHIMENTO LAB</div>
+                            <div class="service-item-compact" data-service="RETORNO RINOMODELAÇÃO">RETORNO RINOMODELAÇÃO</div>
+                            <div class="service-item-compact" data-service="RETORNO PREENCHIMENTO">RETORNO PREENCHIMENTO</div>
+                            <div class="service-item-compact" data-service="SKINBOOSTER">SKINBOOSTER</div>
+                            <div class="service-item-compact" data-service="PEELING REJUVENESCEDOR FACIAL">PEELING REJUVENESCEDOR FACIAL</div>
+                            <div class="service-item-compact" data-service="LIMPEZA DE PELE">LIMPEZA DE PELE</div>
+                            <div class="service-item-compact" data-service="BOTOX FULL FACE">BOTOX FULL FACE</div>
+                            <div class="service-item-compact" data-service="ULTRA MED HOF (ROSTO/PESC">ULTRA MED HOF (ROSTO/PESC)</div>
+                            <div class="service-item-compact" data-service="PREENCHIMENTO (GLABELA)">PREENCHIMENTO (GLABELA)</div>
+                            <div class="service-item-compact" data-service="PREENCHIMENTO (MENTO)">PREENCHIMENTO (MENTO)</div>
+                            <div class="service-item-compact" data-service="PREENCHIMENTO DE MANDIBUL">PREENCHIMENTO DE MANDIBUL</div>
+                            <div class="service-item-compact" data-service="RETORNO ULTRASSOMMICROFOCFACIAL">RETORNO ULTRASSOMMICROFOCFACIAL</div>
+                            <div class="service-item-compact" data-service="SERUM RENNOVA">SERUM RENNOVA</div>
+                            <div class="service-item-compact" data-service="REJUVENESCEDOR 50 +">REJUVENESCEDOR 50 +</div>
+                            <div class="service-item-compact" data-service="RETORNO REJUVENESCEDOR 50">RETORNO REJUVENESCEDOR 50</div>
+                            <div class="service-item-compact" data-service="RETORNO LASER DE CO2">RETORNO LASER DE CO2</div>
+                            <div class="service-item-compact" data-service="LASER DE CO2">LASER DE CO2</div>
+                        </div>
+                    </div>
+
+                    <!-- Tratamentos Corporais -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-user"></i> Tratamentos Corporais</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="AVALIAÇÃO CORPORAL">AVALIAÇÃO CORPORAL</div>
+                            <div class="service-item-compact" data-service="BUMBUM POWER">BUMBUM POWER</div>
+                            <div class="service-item-compact" data-service="ENZIMAS (ABDOMEN)">ENZIMAS (ABDOMEN)</div>
+                            <div class="service-item-compact" data-service="FIOS DE PDO (4 FIOS)">FIOS DE PDO (4 FIOS)</div>
+                            <div class="service-item-compact" data-service="PEIM (RETIRADA DE VARICOS">PEIM (RETIRADA DE VARICOS)</div>
+                            <div class="service-item-compact" data-service="RETORNO FIOS DE PDO">RETORNO FIOS DE PDO</div>
+                            <div class="service-item-compact" data-service="BOTOX CORPORAL (AXILA)">BOTOX CORPORAL (AXILA)</div>
+                            <div class="service-item-compact" data-service="PEIM PARCERIA">PEIM PARCERIA</div>
+                            <div class="service-item-compact" data-service="ENZIMAS (PAPADA)">ENZIMAS (PAPADA)</div>
+                            <div class="service-item-compact" data-service="ENZIMA (INTRAMUSCULAR)">ENZIMA (INTRAMUSCULAR)</div>
+                            <div class="service-item-compact" data-service="ENZIMAS (COSTAS)">ENZIMAS (COSTAS)</div>
+                            <div class="service-item-compact" data-service="CORRENTE RUSSA">CORRENTE RUSSA</div>
+                            <div class="service-item-compact" data-service="BRONZEAMENTO A JATO">BRONZEAMENTO A JATO</div>
+                            <div class="service-item-compact" data-service="DRENAGEM">DRENAGEM</div>
+                        </div>
+                    </div>
+
+                    <!-- Depilação a Laser -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-sun"></i> Depilação a Laser</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="DEPILAÇÃO A LASER (AXILA)">DEPILAÇÃO A LASER (AXILA)</div>
+                            <div class="service-item-compact" data-service="DEPILAÇAO LASER (VIRILHA)">DEPILAÇAO LASER (VIRILHA)</div>
+                            <div class="service-item-compact" data-service="DEPILACAO A LASER (PERNA)">DEPILACAO A LASER (PERNA)</div>
+                            <div class="service-item-compact" data-service="DEPILACAO A LASER (BUÇO)">DEPILACAO A LASER (BUÇO)</div>
+                            <div class="service-item-compact" data-service="DEPILACAO A LASER (BRAÇO)">DEPILACAO A LASER (BRAÇO)</div>
+                            <div class="service-item-compact" data-service="DEPILACAO A LASER (ROSTO">DEPILACAO A LASER (ROSTO)</div>
+                            <div class="service-item-compact" data-service="DEPILAÇÃO (PERIANAL)">DEPILAÇÃO (PERIANAL)</div>
+                            <div class="service-item-compact" data-service="REMOÇÃO DE TATUAGEM A LAS">REMOÇÃO DE TATUAGEM A LAS</div>
+                        </div>
+                    </div>
+
+                    <!-- Procedimentos Especiais -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-star"></i> Procedimentos Especiais</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="ALOPÉCIA FEMININA E MASCU">ALOPÉCIA FEMININA E MASCU</div>
+                            <div class="service-item-compact" data-service="LOBULOPLASTIA SEM CORTES">LOBULOPLASTIA SEM CORTES</div>
+                            <div class="service-item-compact" data-service="RETORNO LOBULOPLASTIA">RETORNO LOBULOPLASTIA</div>
+                            <div class="service-item-compact" data-service="CONSULTA MÉDICA">CONSULTA MÉDICA</div>
+                            <div class="service-item-compact" data-service="COMPROMISSO ANA (CILIOS)">COMPROMISSO ANA (CILIOS)</div>
+                            <div class="service-item-compact" data-service="AVALIAÇÃO (ONLINE)">AVALIAÇÃO (ONLINE)</div>
+                            <div class="service-item-compact" data-service="PSICÓLOGA">PSICÓLOGA</div>
+                        </div>
+                    </div>
+
+                    <!-- Produtos Anna Pegova -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-gem"></i> Produtos Anna Pegova</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="ANNA PEGOVA PROTETOR SOLA">ANNA PEGOVA PROTETOR SOLA</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA TELO">ANNA PEGOVA TELO</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA HIDRATANTE MI">ANNA PEGOVA HIDRATANTE MI</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA VITAMINA C">ANNA PEGOVA VITAMINA C</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA GEL CONTOUR">ANNA PEGOVA GEL CONTOUR</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA HIDRATANTE E">ANNA PEGOVA HIDRATANTE E</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA V SHAPE">ANNA PEGOVA V SHAPE</div>
+                            <div class="service-item-compact" data-service="ANNA PEGOVA PREENCHEDOR D">ANNA PEGOVA PREENCHEDOR D</div>
+                        </div>
+                    </div>
+
+                    <!-- Serviços Melissa -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-spa"></i> Serviços Melissa</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="MELISSA - MASSAGEM COM VE">MELISSA - MASSAGEM COM VE</div>
+                            <div class="service-item-compact" data-service="MELISSA - DRENAGEM">MELISSA - DRENAGEM</div>
+                            <div class="service-item-compact" data-service="MELISSA - MASSAGEM RELAXA">MELISSA - MASSAGEM RELAXA</div>
+                            <div class="service-item-compact" data-service="MELISSA - HIDRAGLOSS">MELISSA - HIDRAGLOSS</div>
+                            <div class="service-item-compact" data-service="MELISSA - DERMAPLAING">MELISSA - DERMAPLAING</div>
+                        </div>
+                    </div>
+
+                    <!-- Outros Serviços -->
+                    <div class="service-category-compact">
+                        <h3><i class="fas fa-plus"></i> Outros Serviços</h3>
+                        <div class="service-items-compact">
+                            <div class="service-item-compact" data-service="UNHA TATI">UNHA TATI</div>
+                            <div class="service-item-compact" data-service="PEGOTAN 61">PEGOTAN 61</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    <!-- Função para abrir WhatsApp com mensagem personalizada -->
+    <script>
+        function openWhatsApp(serviceName) {
+            const message = `Olá! Gostaria de saber mais sobre o tratamento de ${serviceName}.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/554991873943?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+        
+        // Adicionar onclick para todos os serviços
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceItems = document.querySelectorAll('.service-item-compact');
+            serviceItems.forEach(function(item) {
+                if (!item.onclick) {
+                    const serviceName = item.getAttribute('data-service');
+                    item.onclick = function() {
+                        openWhatsApp(serviceName);
+                    };
+                    item.style.cursor = 'pointer';
+                }
+            });
+            
+            // Adicionar onclick para botões de wishlist dos produtos
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+            wishlistBtns.forEach(function(btn) {
+                btn.onclick = function(e) {
+                    e.preventDefault();
+                    const productItem = btn.closest('.product-item');
+                    const productName = productItem.querySelector('.product-name').textContent;
+                    const message = `Olá! Me interessei pelo produto ${productName}. Gostaria de saber mais sobre ele e como adquirir.`;
+                    const encodedMessage = encodeURIComponent(message);
+                    const whatsappUrl = `https://wa.me/554991873943?text=${encodedMessage}`;
+                    window.open(whatsappUrl, '_blank');
+                };
+            });
+        });
+    </script>
+</body>
+</html>
